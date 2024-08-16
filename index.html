@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pandiselvam Story Book</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splash-screen" class="splash-screen">
+        <div class="splash-content">
+            <img class="image" src="Pandi.jpg">
+            <h1>பாண்டிசெல்வம் கதை புத்தகம்</h1>
+            <p>இன்றைய வாசகர், நாளைய தலைவர்</p>
+            <div class="spinner-border text-light" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="container-fluid d-none">
+        <header class="d-flex justify-content-between align-items-center py-3">
+           <h1>கதைகள்</h1>
+            <div>
+                <button id="toggle-theme" class="btn btn-secondary">இருண்ட / ஒளி பயன்முறை</button>
+            </div>
+        </header>
+        <div class="form-group">
+            <label for="story-select">ஒரு கதையைத் தேர்ந்தெடுக்கவும்:</label>
+            <select id="story-select" class="form-control">
+                <!-- Story options will be populated here -->
+            </select>
+        </div>
+        <div id="story-container" class="story-container">
+            <!-- Story content will be loaded here -->
+        </div>
+        <footer class="text-center mt-4">
+            <p>எனது இணையதளத்தில் கொடுக்கப்பட்டுள்ள அனைத்து கதைகளையும் எந்த வயதினரும் படிக்கலாம். இன்றைய வாசகர் நாளைய தலைவர். கொடுக்கப்பட்ட கதைகள் ஊக்கமளிக்கும் கதைகள், நகைச்சுவை கதைகள், உத்வேகம் தரும் கதைகள் போன்றவற்றின் கலவையாகும். </p>
+           
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
